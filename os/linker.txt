@@ -1,0 +1,16 @@
+ENTRY (_main)
+SECTIONS {
+	. = 0x7e00; /*Or wherever it's loaded*/
+	.text : {
+		*(.text)
+		*(.rdata)
+		*(.rodata)
+		*(.data)
+	}
+	.bss : {
+		_sbss = .;
+		*(COMMON)
+		*(.bss)
+		_ebss = .;
+	}
+}
