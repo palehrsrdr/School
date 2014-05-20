@@ -1,0 +1,1 @@
+This is a clock/timer 'game' made for the gameboy advance emulator. It's pretty accurate and is based off of a popular app called Rainmeter.
